@@ -38,7 +38,7 @@ namespace Docs
             editor.Height = altura;
             editor.Show();
         }
-
+         
         private void ConfiguracionClick(object sender, RoutedEventArgs e)
         {
             Configuracion configuracion = new Configuracion(anchura, altura);
