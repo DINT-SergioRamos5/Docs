@@ -18,9 +18,9 @@
         </Grid.RowDefinitions>
 
         <TextBlock Margin="10" Text="Ancho" Grid.Row="0" Grid.Column="0"></TextBlock>
-        <TextBox Margin="10"  x:Name="AnchoTextBox" Grid.Row="0" Grid.Column="1"></TextBox>
-        <TextBlock Margin="10" Text="Altura" Grid.Row="1" Grid.Column="0"></TextBlock>
-        <TextBox Margin="10" x:Name="AltutaTextBox" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Margin="10"  x:Name="AnchoTextBox" Grid.Row="0" Grid.Column="1" Text="{Binding Anchura}"></TextBox>
+        <TextBlock Margin="10" Text="Altura" Grid.Row="1" Grid.Column="0" ></TextBlock>
+        <TextBox Margin="10" x:Name="AltutaTextBox" Grid.Row="1" Grid.Column="1" Text="{Binding Altura}"></TextBox>
 
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Orientation="Horizontal">
             <Button Margin="10" Content="ACEPTAR" Click="AceptarClick" IsDefault="True"></Button>

@@ -19,25 +19,20 @@ namespace Docs
     /// </summary>
     public partial class Configuracion : Window
     {
-        public int anchura;
-        public int altura;
+        public int Anchura { get; set; }
+        public int Altura { get; set; }
         public Configuracion(int anchura, int altura)
         {
             InitializeComponent();
-            this.altura = altura;
-            this.anchura = anchura;
-
-            AnchoTextBox.Text = anchura.ToString();
-            AltutaTextBox.Text = altura.ToString();
+            DataContext = this;
+            Altura = altura;
+            Anchura = anchura;
+            
         }
 
         private void AceptarClick(object sender, RoutedEventArgs e)
         {
-            anchura = int.Parse(AnchoTextBox.Text);
-            altura = int.Parse(AltutaTextBox.Text);
-
-            DialogResult = true;
-            Close();
+            DialogResult = true;            
         }
     }
 }

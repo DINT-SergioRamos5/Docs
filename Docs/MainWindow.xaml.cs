@@ -47,8 +47,8 @@ namespace Docs
 
             if (configuracion.ShowDialog() == true)
             {
-                anchura = configuracion.anchura;
-                altura = configuracion.altura;
+                anchura = configuracion.Anchura;
+                altura = configuracion.Altura;
             }
         }
     }

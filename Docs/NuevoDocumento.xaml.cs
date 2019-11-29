@@ -29,9 +29,11 @@ namespace Docs
 
         private void GuardarClick(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.SaveFileDialog dialogo = new Microsoft.Win32.SaveFileDialog();
-            dialogo.Filter = "Archivos de texto|*.txt";
-            dialogo.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            Microsoft.Win32.SaveFileDialog dialogo = new Microsoft.Win32.SaveFileDialog
+            {
+                Filter = "Archivos de texto|*.txt",
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+            };
 
             if (dialogo.ShowDialog() == true)
             {
